@@ -1,20 +1,20 @@
 function szamol() {
 
-    var tabla = document.getElementById("tabla");
-    var sorok = tabla.getElementsByTagName("tr");
+    let tabla = document.getElementById("tabla");
+    let sorok = tabla.getElementsByTagName("tr");
 
-    var vegosszeg = 0;
+    let vegosszeg = 0;
 
-    for (var i = 1; i < sorok.length; i++) {
+    for (let i = 1; i < sorok.length; i++) {
 
-        var arCell = sorok[i].getElementsByClassName("ar")[0];
-        var osszegCell = sorok[i].getElementsByClassName("osszeg")[0];
-        var input = sorok[i].getElementsByTagName("input")[0];
+        let arCell = sorok[i].getElementsByClassName("ar")[0];
+        let osszegCell = sorok[i].getElementsByClassName("osszeg")[0];
+        let input = sorok[i].getElementsByTagName("input")[0];
 
-        var ar = parseInt(arCell.innerText);
-        var darab = parseInt(input.value);
+        let ar = parseInt(arCell.innerText);
+        let darab = parseInt(input.value);
 
-        var osszeg = ar * darab;
+        let osszeg = ar * darab;
 
         osszegCell.innerText = osszeg;
 
